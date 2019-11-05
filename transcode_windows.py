@@ -78,12 +78,7 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
 
 
 def progress(percentage, ffmpeg):
-        # You can update a field in your database
-        # You can also create a socket connection and show a progress bar to users
-        # sys.stdout.write("\rTranscoding...(%s%%)[%s%s]" % (percentage, '#' * percentage, '-' * (100 - percentage)))
-        # sys.stdout.flush()
-        # if percentage!=100:
-        printProgressBar(percentage, 100, prefix = 'Progress:', suffix = 'Complete', length = 50)
+    printProgressBar(percentage, 100, prefix = 'Progress:', suffix = 'Complete', length = 50)
 
 
 
@@ -112,6 +107,8 @@ class App(QWidget):
         self.progress.setMaximum(100)
         
         self.show()
+
+    
     
 
     @pyqtSlot()
@@ -133,7 +130,7 @@ class App(QWidget):
         logging.basicConfig(filename=path + "\\LogFile("+root_folder_name+").txt",level=logging.DEBUG)
 
         logging.info(time_now+"\t Base Path- ("+path+")\n")
-        logging.info("-------------------------Video Converion Log--------------------\n")
+        logging.info("-------------------------Video Conversion Log--------------------\n")
         
 
         converted_files_count = 0

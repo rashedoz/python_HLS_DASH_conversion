@@ -1,0 +1,6 @@
+INFO:root:05/11/2019 17:58:09	 Base Path- (/Volumes/rashed_personal/Media_Transcode/VideoConvert)
+
+INFO:root:-------------------------Video Conversion Log--------------------
+
+INFO:root:Total files -3
+
